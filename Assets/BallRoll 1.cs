@@ -34,5 +34,9 @@ public class BallRoll : MonoBehaviour
         transform.position = startPosition;
         Debug.Log("respawned");
     }
+    public void UpdateCheckpoint()
+    {
+        startPosition = transform.position;
+    }
 }
 
